@@ -1,0 +1,73 @@
+body {
+    background-color: #001240;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo {
+    width: 20%; 
+    height: auto;
+}
+
+.userPicture {
+    width: 20%; 
+    height: auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 150px;
+    color: #fff;
+}
+
+.userDetails {
+    background-color: rgb(44, 160, 160);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    flex-grow: 2;
+}
+
+.userDetails h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.userDetails span {
+    margin: 0;
+    display: inline-block;
+}
+
+.home {
+    background-color: rgb(13, 138, 177);
+}
+
+.projects {
+    background-color: rgb(54, 148, 177)
+}
+
+.contact {
+    background-color: rgb(87, 156, 177)
+}
+
+.home, .projects, .contact {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.home ion-icon, 
+.projects ion-icon, 
+.contact ion-icon {
+    font-size: 75px;
+}

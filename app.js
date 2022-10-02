@@ -1,7 +1,7 @@
-var express = require("express");
-var serverRouter = require("./routes/server.js");
+const express = require("express");
+const serverRouter = require("./routes/home.js");
 
-var app = express();
+const app = express();
 app.set("views", "views");
 app.set("view engine", "ejs"); //using ejs as view engine
 app.use(express.json());

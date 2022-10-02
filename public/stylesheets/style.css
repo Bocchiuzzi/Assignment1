@@ -1,29 +1,37 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #001240;
+    background: linear-gradient(to bottom right, rgb(13, 153, 196), rgb(55, 94, 94));    
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .logo {
     width: 20%; 
     height: auto;
+    border-radius: 50%;
 }
 
 .userPicture {
     width: 20%; 
-    height: auto;
+    height: auto;    
 }
 
-.container {
-    max-width: 1170px;
+.navBar {        
+    max-width: 1170px;    
     margin: 0 auto;
 }
+
 
 nav {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height: 150px;
-    color: #fff;
+    height: auto;
+    color: white;
+    border-style: dotted dashed solid double;
+    background-color: rgba(107, 107, 84, 0.123);
 }
 
 .userDetails {
@@ -34,11 +42,12 @@ nav {
     flex-wrap: wrap;
     padding: 0px 15px;
     flex-grow: 2;
+    color: white;
 }
 
 .userDetails h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .userDetails span {
@@ -47,18 +56,26 @@ nav {
 }
 
 .home {
-    background-color: rgb(13, 138, 177);
+    background-color: rgb(13, 138, 177);    
+}
+
+.about {
+    background-color: rgb(54, 148, 177)
 }
 
 .projects {
+    background-color: rgb(13, 138, 177)
+}
+
+.services{
     background-color: rgb(54, 148, 177)
 }
 
 .contact {
-    background-color: rgb(87, 156, 177)
+    background-color: rgb(13, 138, 177)
 }
 
-.home, .projects, .contact {
+.home, .projects, .contact, .about, .services {
     color: #fff;
     display: flex;
     justify-content: center;
@@ -68,6 +85,12 @@ nav {
 
 .home ion-icon, 
 .projects ion-icon, 
-.contact ion-icon {
+.contact ion-icon,
+.about ion-icon,
+.services ion-icon {
     font-size: 75px;
+}
+
+.caption {
+    display: block;
 }

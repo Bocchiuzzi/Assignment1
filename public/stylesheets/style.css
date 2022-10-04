@@ -1,11 +1,19 @@
-html {
+/* ************* Whole Page ************* */
+html {    
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     height: 100%;
+    min-width: 1280px;
 }
 
 body {
     background: linear-gradient(to bottom right, rgb(13, 153, 196), rgb(55, 94, 94));    
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* ************* Logos and Pics ************* */
 
 .logo {
     width: 20%; 
@@ -18,15 +26,21 @@ body {
     height: auto;    
 }
 
+/* ************* NavBar Overall Size ************* */
+
 .navBar {        
-    max-width: 1170px;    
+    max-width: 1170px;
+    min-width: 1170px;    
     margin: 0 auto;
 }
 
+/* ************* Content Container Inside Body ************* */
+
 .container {
-    
+    max-width: 100%;
 }
 
+/* ************* NavBar Divs ************* */
 
 nav {
     display: flex;
@@ -60,7 +74,7 @@ nav {
 }
 
 .home {
-    background-color: rgb(13, 138, 177);    
+    background-color: rgb(13, 138, 177);        
 }
 
 .about {
@@ -79,22 +93,93 @@ nav {
     background-color: rgb(13, 138, 177)
 }
 
-.home, .projects, .contact, .about, .services {
-    color: #fff;
-    display: flex;
-    justify-content: center;
+/* ************* NavBar Icon Divs ************* */
+
+.home,
+.projects,
+.contact,
+.about,
+.services {       
+    color: #fff;    
+    text-align: center;
+    display:block;    
     align-items: center;
     flex-grow: 1;
+    font-size: 20px;       
+}
+
+:visited {
+    color:rgb(56, 56, 55)
+}
+
+/* ************* Icons Themselves ************* */
+
+.home ion-icon:hover,  
+.projects ion-icon:hover, 
+.contact ion-icon:hover,
+.about ion-icon:hover,
+.services ion-icon:hover {
+    color:rgb(0, 0, 0);
+    font-size: 100px;
 }
 
 .home ion-icon, 
 .projects ion-icon, 
 .contact ion-icon,
 .about ion-icon,
-.services ion-icon {
-    font-size: 75px;
+.services ion-icon { 
+    margin-top: 60%;               
+    font-size: 75px;    
 }
 
-.caption {
-    display: block;
+/* ************* Contact Form Styles************* */
+
+form { 
+    max-width:420px; 
+    margin:50px auto; }
+
+.feedback-input {
+    color:white;    
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 5px solid rgb(32, 32, 31);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { 
+    border:2px solid #CC4949; 
+}
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:rgb(32, 32, 31);
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  
+  [type="submit"]:hover { 
+    background:#7a7878; 
 }

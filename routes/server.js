@@ -2,26 +2,26 @@ var express = require("express");
 var app = express.Router();
 
 app.get("/", (req, res) => {
-res.render("server", {title: "Express"})
-});
+    res.render("server", {title: "Express"})
+    });
 
 app.get("/server", function(req, res) {
     res.render("server");
 });
 
-app.get('/about', function(req, res) {
+app.get("D:/Centennial/Semester 3/WebAppDev/Assignment1/views/about", function(req, res) {
     res.render('about');
 });
 
-app.get("/projects", function(req, res) {
+app.get("file:/Centennial/Semester 3/WebAppDev/Assignment1/views/projects", function(req, res) {
     res.render("projects");
 });
 
-app.get("/services", function(req, res) {
+app.get("D:/Centennial/Semester 3/WebAppDev/Assignment1/views/services", function(req, res) {
     res.render("services");
 });
 
-app.get("/contact", function(req, res) {
+app.get("D:/Centennial/Semester 3/WebAppDev/Assignment1/views/contact", function(req, res) {
     res.render("contact");
 });
 

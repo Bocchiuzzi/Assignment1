@@ -186,6 +186,10 @@ nav {
     transition: all 0.3s;    
 }
 
+/* ************* Table Style ************* */
+.projectsTable tr:hover {
+    background-color: rgba(39, 37, 37, 0.534);}
+
 /* ************* Contact Form Styles************* */
 
 form { 
@@ -240,15 +244,16 @@ form {
 /* ************* Footer ************* */
 
 .footer-dark {
-    padding:5px 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;    
     padding-left: 5px;  
     color:#f0f9ff;
     background-color:#282d32;
     border-style: ridge;
     width:100%;    
   }  
-  .footer-dark ul {
-    padding:0;
+  .footer-dark ul {    
     list-style:none;
     line-height:1;
     font-size:14px;
@@ -271,10 +276,11 @@ form {
   }    
 
   .footer-dark .copyright {
-    text-align:center;
-    padding-top:5px;
+    text-align:center;   
+    padding-top:0px;
+    padding-left: 40px;
     opacity:0.3;
     font-size:13px;
-    margin-bottom:0;
+    margin-bottom:auto 0;
   }
   

@@ -1,37 +1,17 @@
 {
-  "private": true,
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
-  },
-  "name": "comp229.005.f2022.assignment1",
-  "version": "1.0.0",
-  "description": "Assignment 1, Express Portfolio Site Abdul Rahman Saud",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheMangoMaster/COMP229.005.F2022.Assignment1.git"
-  },
-  "keywords": [
-    "COMP229.005",
-    "Mean",
-    "Express",
-    "EJS",
-    "NodeJS",
-    "Portfolio"
-  ],
-  "author": "Abdul Rahman Saud",
+  "author": "Brandon Occhiuzzi",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TheMangoMaster/COMP229.005.F2022.Assignment1/issues"
-  },
-  "homepage": "https://github.com/TheMangoMaster/COMP229.005.F2022.Assignment1#readme"
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "serve-favicon": "^2.5.0"
+  }
 }

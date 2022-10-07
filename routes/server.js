@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("server", {title: "Express"})
+    res.render("server", {title: "Home"})
     });
     
 router.get("/server", function(req, res) {

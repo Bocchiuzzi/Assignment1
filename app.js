@@ -1,10 +1,8 @@
 const express = require('express');
-var favicon = require('serve-favicon')
+var favicon = require('serve-favicon');
 const serverRouter = require("./routes/server.js");
 
 const app = express();
-
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.set("views", "views");
 app.set("view engine", "ejs"); //using ejs as view engine

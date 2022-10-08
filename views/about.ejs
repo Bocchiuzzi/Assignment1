@@ -8,11 +8,11 @@
     <title>About</title>    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <header>
-        <%- include('D:/Centennial/Semester 3/WebAppDev/Assignment1/views/partials/header.ejs'); %>
-    </header>
 </head>
-<body>    
+<body>
+    <header>
+        <% include partials/header.ejs %> 
+    </header>
     <div class="container">       
     <h1>Hello and welcome to the <i>About Me</i> page!</h1>    
         <p>Please take a moment and learn a little about me and, in the process,<br> determine that I am the perfect fit to help address your company's challenges.</p>
@@ -22,32 +22,31 @@
             From there I took some time to teach ESL in South Korea for a year and continuing to travel and working in hospitality management between frequent, lengthy, backpacking excursions.<br>
             After getting married and settling down I move into VQA Wine sales, becoming the Sales Rep for all of Northern Ontario for one of the largest VQA Wineries. During the Covid-19 pandemic<br> 
             my industry took a big hit financially and I decided to go back to school for something I am passionate about, Gaming.</p>
+        <br><br><br>
+        <Table class="aboutTable" width="100%">
+            <tr>
+                <td><img class="image" src="/images/centennial.jpg" style="width: 90%" alt="Centennial College Logo"></td>
+                <td><img class="image" src="/images/Nipissing_University.png" alt="Nipissing University Logo"></td>
+                <td><img class="image" src="/images/travel.png" style="width: 50%" alt="travel"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p2>I am currently in my second year of the Game Programming diploma at Centennial College, to learn game development. In addition to game development the program also has me learning a fair amount of software development skills which I feel is an advantageous addition to my existing skill set.</p2>
+                </td>
+                <td>
+                    <p2>I hold a bachelor's degree from Nipissing University in Classical History focusing on Greek and Roman history. History is full of lessons that can be applied to our modern lives, and it is my firmly held belief that it is imperative to learn from the past if we want to create a better future.</p2> 
+                </td>
+                <td>
+                    <p2>Having spent the better part of my adult life backpacking around the world I am familiar and comfortable with many different cultures and people. This has lead me to develop a keen understanding of people, their needs, motivations, and  
+                    how to interact appropriately with anyone regardless of where they are from or what beliefs they hold. I am sensitive and considerate to cultural differences and thoroughly enjoy navigating through any challenges that may arise during those social interactions.</p2>
+                </td>
+            </tr>
+        </Table>
         <br><br>
-        <div class="container_image">
-            <img class="image" src="/images/centennial.png" style="width: 90%" alt="Centennial College Logo">
-            <br><br><br><br><br><br>
-            <img class="image" src="/images/Nipissing_University.png" alt="Nipissing University Logo">
-            <br><br><br><br><br><br>
-            <img class="image" src="/images/travel.png" style="width: 50%; padding-left: 50px;" alt="travel">
-        </div> 
-            <p2>I am currently in my second year of the Game Programming diploma at Centennial College, to learn game development.<br>
-                In addition to game development the program also has me learning a fair amount of software development skills<br> 
-                whhich I feel is an advantageous addition to my existing skill set. <br><br><br><br>
-                
-                I hold a bachelor's degree from Nipissing University in Classical History focusing on Greek and Roman history.<br>            
-                History is full of lessons that can be applied to our modern lives, and it is my firmly held belief that it is<br> 
-                imperative to learn from the past if we want to create a better future.<br><br><br><br>        
-                
-                Having spent the better part of my adult life backpacking around the world I am familiar and comfortable with many <br>
-                different cultures and people. This has lead me to develop a keen understanding of people, their needs, motivations, and <br> 
-                how to interact appropriately with anyone regardless of where they are from or what beliefs they hold. I am sensitive <br>
-                and considerate to cultural differences and thoroughly enjoy navigating through any challenges that may arise during <br>
-                those social interactions.</p2>
-            <br><br><br>    
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-<%- include('D:/Centennial/Semester 3/WebAppDev/Assignment1/views/partials/footer.ejs'); %>
+<% include partials/footer.ejs %>  
 </html>

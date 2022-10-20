@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    
+</head>
+<body>
+    <header>
+        <% include ../partials/header.ejs %> 
+    </header>
+
+    <!-- <%= BusinessList %> -->
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <h1><%= title %></h1>
+        <br>
+        <div>
+            <a href="/business/add" class="btn btn-primary align-self-end" role="button">
+                <i class="fas fa-plus-circle"></i> 
+                Add a new Item
+            </a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                    <th class="text-center">Contact Name</th>
+                    <th class="text-center">Contact Number</th>
+                    <th class="text-center">Email Address</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let i = 0; i < BusinessList.length; i++) { %>
+                    <tr>
+                        <td class="text-center"><%= BusinessList[i].name %></td>
+                        <td class="text-center"><%= BusinessList[i].number %></td>
+                        <td class="text-center"><%= BusinessList[i].email %></td>
+                        <td class="text-center">
+                            <a href="/business/edit/<%= BusinessList[i]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt"></i></a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/business/delete/<%= BusinessList[i]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+  <% include ../partials/footer.ejs %>
+</body>
+</html>

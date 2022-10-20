@@ -29,6 +29,18 @@
     <div class="contact">
         <a href="/views/contact"><ion-icon name="mail-outline"></ion-icon></a>
         <p>Contact</p>
-    </div>
+    </div>    
     </nav>        
-</div>    
+</div>
+<br>  
+<li class="nav-item dropdown" style="margin-left: 375px">
+    <% if (title == "Business List" || title == "Add a new Item") { %>
+      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
+    <% } else { %>
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
+    <% } %>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/business/list">Business List</a></li>
+      <li><a class="dropdown-item" href="/business/add">Add a new Item</a></li>
+    </ul>
+  </li>

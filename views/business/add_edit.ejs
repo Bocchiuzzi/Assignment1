@@ -24,84 +24,36 @@
                 <div class="form-group">
                     <input type="hidden"
                         name="id"
-                        value="<%= name._id %>"
-                    >
-                    <label for="itemTextField">Contact Name</label>
+                        value="<%= item._id %>"
+                    > 
+                    <label for="nameTextField">Contact Name</label>
                     <input type="text" class="form-control"
-                        id="itemTextField"
-                        placeholder="Enter the Item Name"
-                        name="item" 
-                        value="<%= item.item %>"
+                        id="nameTextField"
+                        placeholder="Enter Contact Name"
+                        name="name" 
+                        value="<%= item.name %>"
                         required>
                 </div>
                 <br />
                 <div class="form-group">
-                    <label for="QtyTextField">Quantity</label>
+                    <label for="PhoneTextField">Phone Number</label>
                     <input type="number" class="form-control"
-                    id="QtyTextField"
-                    placeholder="00"
-                    name="qty" 
-                    value="<%= item.qty %>"
+                    id="PhoneTextField"
+                    placeholder="000-000-0000"
+                    name="phone" 
+                    value="<%= item.phone %>"
                     required>
                 </div>
                 <br />
                 <div class="form-group">
-                    <label for="statusTextField">Status</label>
+                    <label for="emailTextField">Email Address</label>
                     <input type="text" class="form-control"
-                    id="statusTextField"
-                    placeholder="Enter a status"
-                    name="status" 
-                    value="<%= item.status %>"
+                    id="emailTextField"
+                    placeholder="Enter an Email Address"
+                    name="email" 
+                    value="<%= item.email %>"
                     >
-                </div>
-                <br />
-                <div class="card">
-                    <div class="card-header">Size</div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="hightTextField">Contact Name</label>
-                            <input type="number" step="0.01" 
-                            class="form-control"
-                            id="TextField"
-                            placeholder="0.00"
-                            name="size_h" 
-                            value="<%= item.size.h %>"
-                            required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="widthTextField">Width</label>
-                            <input type="number" step="0.01"
-                            class="form-control"
-                            id="widthTextField"
-                            placeholder="0.00"
-                            name="size_w" 
-                            value="<%= item.size.w %>"
-                            required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="uomTextField">Hight</label>
-                            <input type="text" class="form-control"
-                            id="uomTextField"
-                            placeholder="cm"
-                            name="size_uom" 
-                            value="<%= item.size.uom %>"
-                            required>
-                        </div>
-                    </div>                    
                 </div>                
-                <br />
-                <div class="form-group">
-                    <label for="tagTextArea">Tags <span class="text-muted">[use , to separate tags]</span></label>
-                    <textarea type="text" class="form-control"
-                    id="tagTextArea"
-                    placeholder="Enter the tags of the item"
-                    name="tags" 
-                    required>
-                    <%= item.tags %>
-                    </textarea>
-                </div>
                 <br/>
 
                 <button class="btn btn-primary" type="submit">

@@ -1,8 +1,7 @@
-<div class="navBar">
+<div class="navigationStation">
     <nav>
         <img class="logo" src="/images/LogoGrey.jpg" alt="logo">
-        <img class="userPicture" src="/images/mugshot.jpg" alt="profile picture">
-        
+        <img class="userPicture" src="/images/mugshot.jpg" alt="profile picture">        
     <div class="userDetails">
         <h1>Brandon</h1>
         <h1>Devlin</h1>
@@ -29,6 +28,24 @@
     <div class="contact">
         <a href="/views/contact"><ion-icon name="mail-outline"></ion-icon></a>
         <p>Contact</p>
+    </div>
+    <div class = "user">
+        <a href="/users"><ion-icon name="people-outline"></ion-icon></a>       
+            <% if (title == "Users") { %>
+                <a class="nav-link active" href="/users">
+            <% } else { %>
+                <a class="nav-link" href="/users">
+            <% } %>
+            <p>Users</p>         
+                <!--<i class="fas fa-user"></i> Users </a></a>-->   
+    </div>
+    <div class = "sign">        
+            <% if (typeof userName == 'string' && userName) { %>
+              <a class="nav-link" href="/users/signout" onclick="return confirm('Are you sure?')"><p>Sign Out (<%= userName %>)</p><ion-icon name="trail-sign-outline"></ion-icon></a>
+            <% } else { %>
+              <a class="nav-link" href="/users/signin"><ion-icon name="trail-sign-outline"></ion-icon></a>
+            <% } %>
+            <p>Sign In/Out</p>                
     </div>    
     </nav>        
 </div>
@@ -40,7 +57,7 @@
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
     <% } %>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="/business/list">Business List</a></li>
-      <li><a class="dropdown-item" href="/business/add">Add a new Item</a></li>
+        <li><a class="dropdown-item" href="/business/add">Add a New Contact</a></li>
+        <li><a class="dropdown-item" href="/business/list">Business Contact List</a></li>
     </ul>
   </li>

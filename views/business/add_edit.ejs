@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>    
+    <title>Edit Contacts</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">        
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/stylesheets/style.css">
     
@@ -13,19 +14,17 @@
     <header>
         <% include ../partials/header.ejs %> 
     </header>
-
 <!-- Content for the Add_Edit page -->
+
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
             <h1>Add and Edit</h1>
-
             <form class="form" method="POST">
                 <div class="form-group">
                     <input type="hidden"
                         name="id"
-                        value="<%= item._id %>"
-                    > 
+                        value="<%= item._id %>">                    
                     <label for="nameTextField">Contact Name</label>
                     <input type="text" class="form-control"
                         id="nameTextField"
@@ -55,7 +54,6 @@
                     >
                 </div>                
                 <br/>
-
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> 
                     Submit
@@ -65,12 +63,10 @@
                     <i class="fas fa-undo"></i> 
                     Cancel
                 </a>
-
             </form>
         </div>
-
     </div>
-</div>
+</div> 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
 <% include ../partials/footer.ejs %>  

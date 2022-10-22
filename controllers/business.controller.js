@@ -47,9 +47,10 @@ module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id
 
     let updatedItem = BusinessModel({
-        name: req.body.id,
-        number: req.body.item,
-        email: req.body.qty        
+        _id: req.body.id,
+        contactName: req.body.contactName,
+        contactNumber: req.body.contactNumber,
+        emailAddress: req.body.emailAddress,        
     });
 
     BusinessModel.updateOne({_id: id}, updatedItem, (err) => {
@@ -105,9 +106,10 @@ module.exports.displayAddPage = (req, res, next) => {
 module.exports.processAddPage = (req, res, next) => {
 
     let newItem = BusinessModel({
-        name: req.body.id,
-        number: req.body.item,
-        email: req.body.qty        
+        _id: req.body.id,
+        contactName: req.body.contactName,
+        contactNumber: req.body.contactNumber,
+        emailAddress: req.body.emailAddress,       
     });
 
     BusinessModel.create(newItem, (err, item) =>{

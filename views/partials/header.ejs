@@ -46,18 +46,21 @@
               <a class="nav-link" href="/users/signin"><ion-icon name="trail-sign-outline"></ion-icon></a>
             <% } %>
             <p>Sign In/Out</p>                
-    </div>    
+    </div> 
+    <div class="business">
+        <ion-icon name="business-outline"></ion-icon>
+        <a class="nav-item dropdown">
+            <% if (title == "Business List" || title == "Add a new Item") { %>
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
+            <% } else { %>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
+            <% } %>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/business/add">Add a New Contact</a></li>
+                <li><a class="dropdown-item" href="/business/list">Business Contact List</a></li>
+            </ul>        
+    </div>
     </nav>        
 </div>
 <br>  
-<li class="nav-item dropdown" style="margin-left: 375px">
-    <% if (title == "Business List" || title == "Add a new Item") { %>
-      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
-    <% } else { %>
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
-    <% } %>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="/business/add">Add a New Contact</a></li>
-        <li><a class="dropdown-item" href="/business/list">Business Contact List</a></li>
-    </ul>
-  </li>
+

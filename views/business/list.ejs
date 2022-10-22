@@ -23,7 +23,7 @@
         <h1><%= title %></h1>
         <br>
         <div>
-            <a href="/business/add" class="btn btn-primary align-self-end" role="button">
+            <a href="/business/add" class="btn btn-primary align-self-end" role="button" style="color: white; margin-left: 300px;">
                 <i class="fas fa-plus-circle"></i> 
                 Add a new Item
             </a>
@@ -42,14 +42,15 @@
 
                 <% for(let i = 0; i < BusinessList.length; i++) { %>
                     <tr>
-                        <td class="text-center"><%= BusinessList[i].name %></td>
-                        <td class="text-center"><%= BusinessList[i].number %></td>
-                        <td class="text-center"><%= BusinessList[i].email %></td>
-                            <a href="/business/edit/<%= BusinessList[i]._id %>" class="btn btn-primary btn-sm">
+                        <td class="text-center"><%= BusinessList[i].contactName %></td>
+                        <td class="text-center"><%= BusinessList[i].contactNumber %></td>
+                        <td class="text-center"><%= BusinessList[i].emailAddress %></td>
+                        <td class="text-center">
+                            <a href="/business/edit/<%= BusinessList[i]._id %>" class="btn btn-primary btn-lg">
                             <i class="fas fa-pencil-alt"></i></a>
                         </td>
                         <td class="text-center">
-                            <a href="/business/delete/<%= BusinessList[i]._id %>" class="btn btn-danger btn-sm">
+                            <a href="/business/delete/<%= BusinessList[i]._id %>" class="btn btn-danger btn-lg">
                             <i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
@@ -57,9 +58,12 @@
             </table>
         </div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
   </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
-  <% include ../partials/footer.ejs %>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+    <footer>
+    <% include ../partials/footer.ejs %>    
+    </footer> 
 </body>
 </html>

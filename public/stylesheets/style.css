@@ -145,6 +145,10 @@ nav {
     background-color: #3f4347;
 }
 
+.business {
+    background-color: #282d32;
+}
+
 /* ************* NavBar Icon Divs ************* */
 
 .home,
@@ -153,7 +157,8 @@ nav {
 .about,
 .services,
 .user,
-.sign {       
+.sign,
+.business {       
     color: #fff;    
     text-align: center;
     display:block;    
@@ -174,7 +179,8 @@ nav {
 .about ion-icon:hover,
 .services ion-icon:hover, 
 .user ion-icon:hover,
-.sign ion-icon:hover {
+.sign ion-icon:hover,
+.business ion-icon:hover {
     color:rgb(0, 0, 0);
     font-size: 100px;
 }
@@ -185,7 +191,8 @@ nav {
 .about ion-icon,
 .services ion-icon,
 .user ion-icon,
-.sign ion-icon { 
+.sign ion-icon,
+.business ion-icon { 
     margin-top: 60%;               
     font-size: 75px;
     transition: all 0.3s;    
@@ -258,11 +265,12 @@ form {
     border-style: ridge !important;
     width:100% !important;    
   }  
-  .footer-dark ul {    
+  .footer-dark ul {
+    width: 1000px;    
     list-style:none !important;
     line-height:1 !important;
     font-size:14px !important;
-    margin-bottom:0 !important; 
+    margin-bottom:20px !important; 
   }
   
   .footer-dark ul a {
@@ -297,8 +305,9 @@ form {
 
 /**** Business List ***/
 .table-responsive{
+    margin-left: 300px;
     align-self: center;
-    width: 75%;
+    width: 60%;
 }
   
   

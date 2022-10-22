@@ -273,4 +273,10 @@ form {
     font-size:13px;
     margin-bottom:auto 0;
   }
+
+  /***Sign in***/
+
+  .flash{
+    color: red;
+  }
   

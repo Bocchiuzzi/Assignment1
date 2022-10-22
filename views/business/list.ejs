@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">        
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />        
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/stylesheets/style.css">
     
@@ -46,11 +47,11 @@
                         <td class="text-center"><%= BusinessList[i].contactNumber %></td>
                         <td class="text-center"><%= BusinessList[i].emailAddress %></td>
                         <td class="text-center">
-                            <a href="/business/edit/<%= BusinessList[i]._id %>" class="btn btn-primary btn-lg">
+                            <a href="/business/edit/<%= BusinessList[i]._id %>" class="btn btn-primary btn-med">
                             <i class="fas fa-pencil-alt"></i></a>
                         </td>
                         <td class="text-center">
-                            <a href="/business/delete/<%= BusinessList[i]._id %>" class="btn btn-danger btn-lg">
+                            <a href="/business/delete/<%= BusinessList[i]._id %>" class="btn btn-danger btn-med">
                             <i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
